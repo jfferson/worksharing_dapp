@@ -1,0 +1,15 @@
+{
+  "name": "doc_search",
+  "version": "1.0.0",
+  "description": "flexible search on many tipes of documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "files"
+  ],
+  "author": "jeferson",
+  "license": "ISC"
+}
