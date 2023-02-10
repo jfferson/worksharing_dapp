@@ -1,15 +1,19 @@
 {
   "name": "doc_search",
-  "version": "1.0.0",
-  "description": "flexible search on many tipes of documents",
+  "version": "0.0.1",
+  "description": "flexible search on many types of documents",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "keywords": [
     "search",
-    "files"
+    "documents"
   ],
   "author": "jeferson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "flexsearch": "^0.7.31",
+    "node-tika": "^0.0.1"
+  }
 }

@@ -1,0 +1,7 @@
+{
+    "name": "node-tika"
+  , "description": "Tika parser binding for node"
+  , "author": "hross"
+  , "version": "0.0.1"
+  , "main": "./lib/tika"
+}
