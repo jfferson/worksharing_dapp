@@ -32,8 +32,8 @@
       },
       {
         "groupId": "org.apache.tika",
-        "artifactId": "tika-bundle",
-        "version": "1.9"
+        "artifactId": "tika-parsers",
+        "version": "2.7.0"
       }
     ]
   }
