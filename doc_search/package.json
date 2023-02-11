@@ -14,6 +14,27 @@
   "license": "ISC",
   "dependencies": {
     "flexsearch": "^0.7.31",
+    "java-bridge": "^2.2.2",
+    "node-java-maven": "^0.1.2",
     "node-tika": "^0.0.1"
+  },
+  "java": {
+    "dependencies": [
+      {
+        "groupId": "org.apache.tika",
+        "artifactId": "tika",
+        "version": "2.7.0"
+      },
+      {
+        "groupId": "org.apache.tika",
+        "artifactId": "tika-core",
+        "version": "2.7.0"
+      },
+      {
+        "groupId": "org.apache.tika",
+        "artifactId": "tika-bundle",
+        "version": "1.9"
+      }
+    ]
   }
 }
