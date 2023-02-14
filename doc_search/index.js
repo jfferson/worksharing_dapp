@@ -1,45 +1,12 @@
 'use strict'
 
-  const mvn = require('node-java-maven');
+var text;
 
-  const java = require('java-bridge');
-
-  function exec_debug(result){
-    console.log(`classpath debug: ${result}`);
-  }
-
-  function error_exec_debug(){
-    console.log("error on classpath debug");
-  }
-
-  mvn(function(err, mvnResults) {
-    if (err) {
-      return console.error('could not resolve maven dependencies', err);
-    }
-    mvnResults.classpath.forEach(function(c) {
-      console.log('really adding ' + c + ' to classpath? more testing ahead');
-      java.classpath.append(c);
-    });
-  })/*.then(function(){ // why it does not work?
-    console.log("waited");
-  });*/
-
-  //var classpath_values = (java_string(classpath)).split(java_file.pathSeparator); // ignore
-
-  /*for (let i in classpath_values){ // ignore
-    console.log("mais teste de classpath: "+i);
-  }*/
+var run = require('sync-runner');
 
 const searchFile = (file, search) => {
 
-  const java_file = java.importClass('java.io.File');
-  const java_system = java.importClass('java.lang.System');
-  const java_string = java.importClass('java.lang.String');
-
-  var classpath = java_system.getProperty("java.class.path");
-  
-  console.log("that testing ahead: "+( classpath.then(exec_debug, error_exec_debug) ) );
-
+  let text = run("java -jar lib/tika-app-2.7.0.jar --help")
   //const parser = java.importClass('org.apache.tika.parser');
 
     // all code bellow using Tika was considering "node-tika" package, that I decided to avoid
@@ -60,7 +27,7 @@ const searchFile = (file, search) => {
 	//search_index.add(file);
 	//return search_index.search(search);
 
-   return "I should be the last output";
+   return text;
 }
 
 module.exports = {searchFile};

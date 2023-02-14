@@ -1,3 +1,0 @@
-This is some text.
-
-It will be parsed by Apache Tika.
