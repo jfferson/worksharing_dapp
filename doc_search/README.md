@@ -1,8 +1,7 @@
 # doc_search
 
 this version is still a prototype
-to get started with the document search run npm install doc_search, then npm run postinstall
-it is ran with npm . FILE SEARCH and exports the function searchFile(file, search)
+it is ran with node . FILE SEARCH and exports the function searchFile(file, search)
 
 ## to-do:
 
