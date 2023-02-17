@@ -3,9 +3,11 @@ right now a repository with text refference for DAPPs related to collaborative w
 
 Have a look at the Wiki Page: https://github.com/jfferson/worksharing_dapp/wiki
 
+to get started with the document search, go to doc_search and
+run npm install . and npm run postinstall
+the prototype is ran with npm . FILE SEARCH and exports the function searchFile(file, search)
+
 ## to-do:
 
-write a nodejs package for simmilarity search directly from regular user text documents.
-The best packages providing the funcionalities for achieving it are Apache Tika, for handling the documents and flexsearch for the simmilarity search.
-
-https://www.npmjs.com/package/vuepress-plugin-fulltext-highlight-search also may have usefull code demonstrating full text search with flexsearch that can be used here
+prototype of nodejs package for simmilarity search directly from regular user text documents now minimally functional. Going to add KV, with Document
+and line indexes for deeper search, as well as changing the processing of args from cmd to process multiple documents and searchs
