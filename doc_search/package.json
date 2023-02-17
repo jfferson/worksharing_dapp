@@ -1,6 +1,6 @@
 {
   "name": "doc_search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "flexible search on many types of documents",
   "main": "index.js",
   "scripts": {
